@@ -15,16 +15,13 @@ def parse_cmdline(argv):
     parser.add_argument('--nn', type=str, default='CnnPolicy')
     parser.add_argument('--model1_desc', type=str, default='CNN')
     parser.add_argument('--env', type=str, default='MortalKombatII-Genesis')
-    parser.add_argument('--state', type=str, default=None)
+    parser.add_argument('--state', type=str, default='VeryEasy.LiuKang-02')
     parser.add_argument('--num_players', type=int, default='1')
     parser.add_argument('--num_env', type=int, default=80) # Num of parallel envs
-    parser.add_argument('--num_timesteps', type=int, default=1e9) # Total timesteps
-    parser.add_argument('--output_basedir', type=str, default='./ckpt_subzero') # Output dir
-    # parser.add_argument('--load_p1_model', type=str, default='./ckpt/MortalKombatII-Genesis-2025-05-10_02-06-53/model_checkpoint_10073824_steps.zip') # Continue Training a model
-    # parser.add_argument('--load_p1_model', type=str, default='./ckpt/MortalKombatII-Genesis-2025-05-10_02-06-53/model_checkpoint_2074336_steps.zip')
-    # parser.add_argument('--load_p1_model', type=str, default="./ckpt3subzero/MortalKombatII-Genesis-2025-05-10_08-48-05/model_checkpoint_999936_steps.zip")
-    # parser.add_argument('--load_p1_model', type=str, default='./ckptcombo/MortalKombatII-Genesis-2025-05-11_18-32-22/model_checkpointVeryEasy.LiuKang-07_113100288_steps') # Continue Training a model
-    parser.add_argument('--load_p1_model', type=str, default='')
+    parser.add_argument('--num_timesteps', type=int, default=1e6) # Total timesteps
+    parser.add_argument('--output_basedir', type=str, default='./ckpt') # Output dir
+    parser.add_argument('--load_p1_model', type=str, default='./ckpt/model_checkpointVeryEasy.LiuKang-03_19825664_steps') # Continue Training a model
+    # parser.add_argument('--load_p1_model', type=str, default='')
     parser.add_argument('--model_1', type=str, default='')
     parser.add_argument('--model_2', type=str, default='')
     parser.add_argument('--alg_verbose', default=True, action='store_false')

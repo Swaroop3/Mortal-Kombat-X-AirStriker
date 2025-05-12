@@ -17,15 +17,13 @@ def parse_cmdline(argv):
     parser.add_argument('--nn', type=str, default='CnnPolicy')  
     parser.add_argument('--nnsize', type=int, default='256')
     parser.add_argument('--env', type=str, default='MortalKombatII-Genesis')
-    parser.add_argument('--state', type=str, default='subzerovsbarakaveryeasy')
+    parser.add_argument('--state', type=str, default='VeryEasy.LiuKang-02')
     parser.add_argument('--num_players', type=int, default='1')
     parser.add_argument('--num_env', type=int, default=1)
     parser.add_argument('--num_timesteps', type=int, default=0)
     parser.add_argument('--output_basedir', type=str, default='./logs') 
-    # parser.add_argument('--model_1', type=str, default='./ckpt4/MortalKombatII-Genesis-2025-05-10_10-16-00/model_checkpoint_6242816_steps') # Model to Visualise
-    # parser.add_argument('--model_1', type=str, default='./ckptcombo/MortalKombatII-Genesis-2025-05-11_18-32-22/model_checkpointVeryEasy.LiuKang-07_113100288_steps.zip')
-    # parser.add_argument('--model_1', type=str, default='./ckptcombo/MortalKombatII-Genesis-2025-05-11_21-37-17/model_checkpointVeryEasy.LiuKang-02_125569088_steps.zip')
-    parser.add_argument('--model_1', type=str, default='./ckpt_subzero/rl_model_6000000_steps')
+    parser.add_argument('--model_1', type=str, default='./ckpt/model_checkpointVeryEasy.LiuKang-03_19825664_steps') #load model_1
+    # parser.add_argument('--model_1', type=str, default='./ckpt_subzero/rl_model_6000000_steps')
     parser.add_argument('--model_2', type=str, default='')
     parser.add_argument('--display_width', type=int, default='1440')
     parser.add_argument('--display_height', type=int, default='810')

@@ -85,8 +85,8 @@ def init_env(output_path, num_env, state, num_players, args, use_sticky_action=T
                              num_players=num_players)
 
             env.action_space.seed(seed + rank)
-            # env = LiuKangDiscretizer(env)
-            env = SubzeroDiscretizer(env)
+            env = LiuKangDiscretizer(env)
+            # env = SubzeroDiscretizer(env)
             env = MK2RewardWrapper(env)
 
             if args.nn == 'MlpPolicy':
@@ -150,8 +150,8 @@ def init_play_env(args, num_players, is_pvp_display=False, need_display=True, us
     
     # 2. Apply core wrappers
     # env = MenuSkipper(env)
-    # env = LiuKangDiscretizer(env)
-    env = SubzeroDiscretizer(env)
+    env = LiuKangDiscretizer(env)
+    # env = SubzeroDiscretizer(env)
     env = MK2RewardWrapper(env)
     
     # # 3. Apply display wrapper BEFORE vectorization
