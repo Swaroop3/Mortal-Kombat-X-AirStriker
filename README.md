@@ -1,5 +1,11 @@
 # Mortal-Kombat-X-AirStriker-Genesis
 
+## Games
+[Airstr_Game_over](./screenshots/Airstr_Game_over.png)
+[MORTAL_KOMBAT_II](./screenshots/MORTAL_KOMBAT_II.png)
+[airstriker_envs_demo](./screenshots/airstriker_envs_demo.png)
+
+
 ## Project Structure
 ```
 Mortal-Kombat-X-AirStriker/
@@ -62,27 +68,20 @@ cd mortal_kombat_2
 python3 -m retro.import ./rom
 ```
 
-## MK2 train
+## MK2
 ```
-python3 mk2_trainer.py
-```
-
-## MK2 play
-```
-python3 model_vs_game.py --state `statefilename`
+python3 mk2_trainer.py                              # Train
+python3 model_vs_game.py --state `statefilename`    # Play
 ```
 
-## Airstriker train
+## Airstriker
 ```
-python3 ppo.py 
-```
-
-## Airstriker play
-```
-python3 ppo_play.py
+python3 ppo.py                                      # Train 
+python3 ppo_play.py                                 # Play
 ```
 
-<!-- <pre lang="md"> ```bash # System installations sudo apt update sudo apt-get install python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg cmake # Virtual environment setup sudo pip3 install -U virtualenv virtualenv --system-site-packages -p python3 ~/vretro source ~/vretro/bin/activate git clone https://github.com/Farama-Foundation/stable-retro.git cd stable-retro pip3 install -e . pip3 install "stable_baselines3[extra]" pygame torchsummary # You can delete this newly cloned repo (Optional) rm -rf stable-retro # Project setup git clone https://github.com/Swaroop3/Mortal-Kombat-X-AirStriker.git cd Mortal-Kombat-X-AirStriker # ROM installation cd mortal_kombat_2 python3 -m retro.import ./rom # MK2 train python3 mk2_trainer.py # MK2 play python3 model_vs_game.py --state `statefilename` # Airstriker train python3 ppo.py # Airstriker play python3 ppo_play.py ``` </pre> -->
+## Misc info
 
-<!-- Look inside the repective code for full arguments that can be used -->
-<!-- Defaults will work for basic usage -->
+*   Look inside the repective code for full arguments that can be used
+*   Defaults will work for basic usage
+
