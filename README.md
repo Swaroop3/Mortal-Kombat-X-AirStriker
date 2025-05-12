@@ -1,9 +1,9 @@
 # Mortal-Kombat-X-AirStriker-Genesis
 
 ## Games
-[Airstr_Game_over](./screenshots/Airstr_Game_over.png)
-[MORTAL_KOMBAT_II](./screenshots/MORTAL_KOMBAT_II.png)
-[airstriker_envs_demo](./screenshots/airstriker_envs_demo.png)
+Airstriker Finishing           |  MORTAL_KOMBAT_II |  Airstriker Training
+:-------------------------:|:-------------------------:|:-------------------------:
+![Airstr_Game_over](./screenshots/Airstr_Game_over.png) | ![MORTAL_KOMBAT_II](./screenshots/MORTAL_KOMBAT_II.png) | ![airstriker_envs_demo](./screenshots/airstriker_envs_demo.png)
 
 
 ## Project Structure
