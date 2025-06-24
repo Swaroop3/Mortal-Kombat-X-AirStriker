@@ -4,8 +4,8 @@ Airstriker Finishing           |  MORTAL_KOMBAT_II |  Airstriker Training
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Airstr_Game_over](./screenshots/Airstr_Game_over.png) | ![MORTAL_KOMBAT_II](./screenshots/MORTAL_KOMBAT_II.png) | ![airstriker_envs_demo](./screenshots/airstriker_envs_demo.png)
 
-## Trained model [liu kang]
-liu kang trained           |  Action Exploitation [sliding kick]  
+## Trained model [Liu kang]
+Liu kang trained           |  Action Exploitation [Leg sweep]  
 :-------------------------:|:-------------------------:
 ![Airstr_Game_over](./screenshots/liu_kang_2nd_part.gif) | ![MORTAL_KOMBAT_II](./screenshots/slide_kick_exploitation.gif) 
 
